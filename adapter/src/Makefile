@@ -7,6 +7,7 @@ LDFLAGS =
 LDPATH =
 VPATH = 
 
+HEADERS = $(shell ls *.h)
 SOURCES = $(shell ls *.cpp)
 PROGS = test_adapter
 
@@ -16,5 +17,5 @@ all: $(PROGS)
 clean:
 	$(RM) $(PROGS)
 
-$(PROGS): $(SOURCES)
-	$(CXX) -o $@ $(CXXFLAGS) $(INCLUDES) $^ $(LDFLAGS) $(LDPATH)
+$(PROGS): $(SOURCES) $(HEADERS)
+	$(CXX) -o $@ $(CXXFLAGS) $(INCLUDES) $(SOURCES) $(LDFLAGS) $(LDPATH)

@@ -7,15 +7,18 @@ LDFLAGS =
 LDPATH =
 VPATH = 
 
-HEADERS = $(shell ls *.h)
 SOURCES = $(shell ls *.cpp)
+OBJECTS = $(SOURCES:%.cpp=%.o)
 PROGS = test_adapter
 
 all: $(PROGS)
 	@echo "PROGS = $(PROGS)" 
 
 clean:
-	$(RM) $(PROGS)
+	$(RM) $(PROGS) $(OBJECTS)
 
-$(PROGS): $(SOURCES) $(HEADERS)
-	$(CXX) -o $@ $(CXXFLAGS) $(INCLUDES) $(SOURCES) $(LDFLAGS) $(LDPATH)
+$(OBJECTS): %.o: %.cpp
+	$(CXX) -o $@ -c $(CXXFLAGS) $(INCLUDES) $<
+
+$(PROGS): $(OBJECTS)
+	$(CXX) -o $@ $(CXXFLAGS) $(INCLUDES) $^ $(LDFLAGS) $(LDPATH)

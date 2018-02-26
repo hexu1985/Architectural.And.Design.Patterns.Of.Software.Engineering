@@ -3,7 +3,7 @@ CREATE_SO = g++ -shared
 RM = rm -f
 CXX = g++
 CXXFLAGS = -Wall -g -c -std=c++11 #-DNDEBUG
-TARGETS = client
+TARGETS = client client_poco
 
 .PHONY: all
 all: $(TARGETS)
@@ -22,4 +22,7 @@ distclean:
 
 client: client.o dictionary_manager.o
 	$(CXX) -o $@ $^ -ldl
+
+client_poco: client.o dictionary_manager_poco.o
+	$(CXX) -o $@ $^ -lPocoFoundation
 

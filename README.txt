@@ -6,4 +6,4 @@ command/    命令模式
 mediator/   中间者模式
 plugin/     插件模式
 strategy/   策略模式
-mediator/   装饰模式
+decorator/  装饰模式

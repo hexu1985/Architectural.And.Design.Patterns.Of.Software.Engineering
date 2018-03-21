@@ -7,3 +7,5 @@ mediator/   中间者模式
 plugin/     插件模式
 strategy/   策略模式
 decorator/  装饰模式
+facade/     外观模式
+composite/  组合模式

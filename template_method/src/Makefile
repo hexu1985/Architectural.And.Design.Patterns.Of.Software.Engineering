@@ -9,7 +9,7 @@ VPATH =
 
 SOURCES = $(shell ls *.cpp)
 OBJECTS = $(SOURCES:%.cpp=%.o)
-PROGS = test_proxy
+PROGS = test
 
 all: $(PROGS)
 	@echo "PROGS = $(PROGS)" 

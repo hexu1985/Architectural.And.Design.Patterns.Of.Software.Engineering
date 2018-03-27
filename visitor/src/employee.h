@@ -14,10 +14,10 @@ private:
 
 protected:
     std::string name;
-    std::string firstName;
+    std::string firstname;
 
 public:
-    Employee(const std::string &firstName, const std::string &name);
+    Employee(const std::string &firstname, const std::string &name);
 
     virtual ~Employee() = 0;
 
@@ -34,16 +34,16 @@ public:
     }
 
     std::string getFirstname() const {
-        return firstName;
+        return firstname;
     }
 
-    void setFirstname(const std::string &firstName) {
-        this->firstName = firstName;
+    void setFirstname(const std::string &firstname) {
+        this->firstname = firstname;
     }
 
     friend std::ostream &operator <<(std::ostream &os, const Employee &employee) {
         os << "PersonalNo." << employee.personalNumber << "Name:"
-            << employee.firstName << " " << employee.name;
+            << employee.firstname << " " << employee.name;
         return os;
     }
 

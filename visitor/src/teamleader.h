@@ -10,7 +10,7 @@ private:
     float bonus;
 
 public:
-    Teamleader(const std::string &firstName, const std::string &name,
+    Teamleader(const std::string &firstname, const std::string &name,
             float basicSalary, float bonus, const std::string &teamDesignation);
 
     std::string getTeamDesignation() const {

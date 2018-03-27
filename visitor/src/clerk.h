@@ -8,7 +8,7 @@ private:
     float salary;
 
 public:
-    Clerk(const std::string &firstName, const std::string &name, float salary);
+    Clerk(const std::string &firstname, const std::string &name, float salary);
 
     float getSalary() const
     {

@@ -1,8 +1,8 @@
 #include "clerk.h"
 #include "employee_visitor.h"
 
-Clerk::Clerk(const std::string &firstName, const std::string &name, float salary)
-    : Employee(firstName, name), salary(salary)
+Clerk::Clerk(const std::string &firstname, const std::string &name, float salary)
+    : Employee(firstname, name), salary(salary)
 {
 }
 

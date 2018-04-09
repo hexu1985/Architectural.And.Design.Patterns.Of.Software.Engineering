@@ -6013,7 +6013,7 @@
 													"_parent": {
 														"$ref": "AAAAAAFipA0qAy+5bvc="
 													},
-													"visible": true,
+													"visible": false,
 													"enabled": true,
 													"lineColor": "#000000",
 													"fillColor": "#ffffff",
@@ -6022,13 +6022,12 @@
 													"showShadow": true,
 													"containerChangeable": false,
 													"containerExtending": false,
-													"left": 63.9599609375,
+													"left": 67.578125,
 													"top": 205,
-													"width": 25.578125,
+													"width": 1,
 													"height": 13,
 													"autoResize": false,
 													"underline": false,
-													"text": "loop",
 													"horizontalAlignment": 2,
 													"verticalAlignment": 5,
 													"wordWrap": false
@@ -6050,11 +6049,11 @@
 													"containerExtending": false,
 													"left": 37,
 													"top": 205,
-													"width": 21.9599609375,
+													"width": 25.578125,
 													"height": 13,
 													"autoResize": false,
 													"underline": false,
-													"text": "seq",
+													"text": "loop",
 													"horizontalAlignment": 2,
 													"verticalAlignment": 5,
 													"wordWrap": false
@@ -7053,10 +7052,9 @@
 									"_parent": {
 										"$ref": "AAAAAAFipAY2vC3tgYk="
 									},
-									"name": "loop",
 									"visibility": "public",
 									"isReentrant": true,
-									"interactionOperator": "seq",
+									"interactionOperator": "loop",
 									"operands": [
 										{
 											"_type": "UMLInteractionOperand",

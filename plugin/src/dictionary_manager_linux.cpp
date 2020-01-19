@@ -6,8 +6,8 @@ DictionaryManager DictionaryManager::dictionaryManager;
 
 std::vector<std::string> DictionaryManager::getDictionaryPaths() {
     std::vector<std::string> paths;
-    paths.push_back("./dictionaries/libgerman_english_dictionary.so");
-    paths.push_back("./dictionaries/libgerman_french_dictionary.so");
+    paths.push_back("libgerman_english_dictionary.so");
+    paths.push_back("libgerman_french_dictionary.so");
     return paths;
 }
 

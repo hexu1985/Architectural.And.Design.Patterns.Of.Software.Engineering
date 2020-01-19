@@ -20,7 +20,7 @@ distclean:
 %.o: %.cpp
 	$(CXX) $(CXXFLAGS) -fPIC $<
 
-client: client.o dictionary_manager.o
+client: client.o dictionary_manager_linux.o
 	$(CXX) -o $@ $^ -ldl
 
 client_poco: client.o dictionary_manager_poco.o

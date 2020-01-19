@@ -22,6 +22,7 @@ IDictionary *DictionaryManager::loadDictionary(const std::string &path) {
     get_dictionary_func_ptr get_dictionary = (get_dictionary_func_ptr) dlsym(handle, "get_dictionary");
     if (get_dictionary == NULL) {
         std::cout << "get symbol get_dictionary error: " << dlerror() << std::endl;
+        dlclose(handle);
         return NULL;
     }
 

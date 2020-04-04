@@ -27,7 +27,7 @@
 
 - [工厂方法模式 factory method](factory_method/)
 - [抽象工厂模式 abstract factory](abstract_factory/)
-- [单件模式 singleton](singleton/)
+- [单例模式 singleton](singleton/)
 - [对象池模式 object pool](object_pool/)
 
 ### 架构模式
